@@ -1,3 +1,3 @@
 # Steve_Carrello
 a simply and hilarious webapp to make your shopping list ezy <br>
-![Progetto senza titolo](https://github.com/user-attachments/assets/f1f6300e-8eab-4a79-8ffb-08c07cfd4a9a)
+<img width="570" alt="Screenshot 2025-01-20 alle 16 32 09" src="https://github.com/user-attachments/assets/339c59c9-0904-4035-b769-bade2b0057c1" />
