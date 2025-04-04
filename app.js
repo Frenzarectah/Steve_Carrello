@@ -2,8 +2,8 @@ const app = Vue.createApp({
     data() {
         return {
             name: "Carrell",
-            var: "pippolo",
-            timeout: true,
+            shopping_items: ['mela','pera','banana','caffe'],
+           // timeout: true,
         }
     },
     mounted() {
@@ -14,15 +14,18 @@ const app = Vue.createApp({
                     <img class="animate__animated animate__heartBeat animate__infinite rounded-full" src="assets/logo.png">
                     <span class="piskel">loading...</span>
                 </div>
-                <div v-else>
-                    <h1> COGLIONE</h1>
+                <div v-else class="bg-[#abe54d] flex justify-center items-center h-screen">
+                    <table class="main_table piskel">
+                    <tr class="title">Shoppinz List</tr>
+                    <tr v-for='item in shopping_items'>{{item}}<td></tr>
+                    </table>
                 </div>
     `,
     methods:{
         isTimeout() {
             setTimeout(() => {
                 this.timeout = false;
-            }, 4000);
+            }, 100);
         }
     }
 });

@@ -6,3 +6,18 @@
 .piskel{
     font-family: 'Piskel';
 }
+.main_table{
+    background-color: white;
+    width:70%;
+    height:80vh;
+    border-radius: 10px;
+}
+.main_table>tr{
+    text-align: center;
+    height:fit-content;
+    border:1px black solid;
+}
+
+.title{
+    font-size:2rem;
+}
