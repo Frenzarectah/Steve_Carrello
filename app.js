@@ -15,10 +15,10 @@ const app = Vue.createApp({
                     <span class="piskel">loading...</span>
                 </div>
                 <div v-else class="bg-[#abe54d] flex justify-center items-center h-screen">
-                    <table class="main_table piskel">
-                    <tr class="title">Shoppinz List</tr>
-                    <tr v-for='item in shopping_items'>{{item}}<td></tr>
-                    </table>
+                    <ul class="main_table piskel">
+                    <div class="title">Shoppinz List</div>
+                    <li v-for='item in shopping_items'>{{item}}</li>
+                    </ul>
                 </div>
     `,
     methods:{
@@ -27,6 +27,16 @@ const app = Vue.createApp({
                 this.timeout = false;
             }, 100);
         }
+    },
+    mounted(){
+        axios.get('https://ohanahome.altervista.org/public/shopping_list')
+            .then(response => {
+                console.log(response);
+                this.shopping_items = response.data.data.map(item =>{ return item.prodotto});
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
     }
 });
 

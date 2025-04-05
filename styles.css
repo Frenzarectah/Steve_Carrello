@@ -12,12 +12,16 @@
     height:80vh;
     border-radius: 10px;
 }
-.main_table>tr{
-    text-align: center;
+.main_table>li{
+    margin: 5px;
     height:fit-content;
-    border:1px black solid;
+    font-size: clamp(1rem, 1vw, 2rem);
 }
-
+.main_table>li::before{
+    content: url('assets/hand.png');
+    display: inline-block;
+}
 .title{
-    font-size:2rem;
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    text-align: center;
 }
