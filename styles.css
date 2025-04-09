@@ -25,3 +25,7 @@
     font-size: clamp(1.5rem, 2vw, 3rem);
     text-align: center;
 }
+button{
+    border: 1px solid black;
+    text-align: center;
+}
