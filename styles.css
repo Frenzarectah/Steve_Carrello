@@ -1,31 +1,29 @@
-@font-face{
-    font-family: 'Piskel';
-    src: url("assets/piskel.otf");
-}
-
-.piskel{
-    font-family: 'Piskel';
+.lilita{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .main_table{
     background-color: white;
     width:70%;
     height:80vh;
-    border-radius: 10px;
+    border-radius: 20px;
+}
+ul {
+    margin-left: 20px;
 }
 .main_table>li{
-    margin: 5px;
+    margin-left: 20px;
+    list-style-type: circle;
     height:fit-content;
     font-size: clamp(1rem, 1vw, 2rem);
-}
-.main_table>li::before{
-    content: url('assets/hand.png');
-    display: inline-block;
 }
 .title{
     font-size: clamp(1.5rem, 2vw, 3rem);
     text-align: center;
 }
 button{
-    border: 1px solid black;
+    width:30px;
+    border: 3px solid black;
     text-align: center;
 }
